@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Rancho da Fé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header"><h1>Finalizar Pedido</h1></header>
+    <main class="page-container">
+        <form id="checkout-form">
+            <div class="form-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Endereço de Entrega</h3>
+                <div class="input-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" placeholder="00000-000">
+                </div>
+                <div class="input-group">
+                    <label for="rua">Rua / Avenida:</label>
+                    <input type="text" id="rua" placeholder="Nome da sua rua" required>
+                </div>
+                <div class="input-group">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" placeholder="Nº da casa/apto" required>
+                </div>
+                <div class="input-group">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" placeholder="Nome do seu bairro" required>
+                </div>
+                 <div class="input-group">
+                    <label for="complemento">Complemento / Ponto de Referência:</label>
+                    <input type="text" id="complemento" placeholder="Opcional">
+                </div>
+            </div>
+            <div class="form-section">
+                <h3><i class="fas fa-credit-card"></i> Forma de Pagamento</h3>
+                <div class="radio-group">
+                    <input type="radio" id="dinheiro" name="pagamento" value="Dinheiro" checked>
+                    <label for="dinheiro">Dinheiro (pagar na entrega)</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="cartao" name="pagamento" value="Cartão">
+                    <label for="cartao">Cartão (pagar na entrega)</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="pix" name="pagamento" value="Pix">
+                    <label for="pix">Pix (chave enviada no WhatsApp)</label>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer">
+        <a href="carrinho.html" class="btn-secondary">Voltar ao Carrinho</a>
+        <button type="submit" form="checkout-form" class="btn-primary">Revisar Pedido</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

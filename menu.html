@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Rancho da Fé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Cardápio do Rancho da Fé</h1>
+        <a href="carrinho.html" class="cart-button">
+            <i class="fas fa-shopping-cart"></i>
+            Carrinho
+            <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <main class="menu-container">
+        <h2><i class="fas fa-egg"></i> Ovos</h2>
+        <div class="menu-grid">
+            <div class="product-card">
+                <h3>Bandeja com 30 Ovos</h3>
+                <p class="price">R$ 24,00</p>
+                <button class="btn-add simple" data-name="Bandeja 30 Ovos" data-price="24.00">Adicionar</button>
+            </div>
+            <div class="product-card">
+                <h3>Bandeja com 15 Ovos</h3>
+                <p class="price">R$ 12,00</p>
+                <button class="btn-add simple" data-name="Bandeja 15 Ovos" data-price="12.00">Adicionar</button>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-prescription-bottle"></i> Doces de Pote</h2>
+        <div class="menu-grid">
+            <div class="product-card options" id="doce-cremoso">
+                <h3>Doce de Leite Cremoso</h3>
+                <div class="size-options">
+                    <input type="radio" id="cremoso-250g" name="size-cremoso" value="250g" data-price="6.00" data-name-suffix="(250g)" checked>
+                    <label for="cremoso-250g">250g</label>
+                    <input type="radio" id="cremoso-500g" name="size-cremoso" value="500g" data-price="12.00" data-name-suffix="(500g)">
+                    <label for="cremoso-500g">500g</label>
+                </div>
+                <p class="price">R$ 6,00</p>
+                <button class="btn-add complex">Adicionar</button>
+            </div>
+            <div class="product-card options" id="doce-granulado">
+                <h3>Doce de Leite Granulado</h3>
+                <div class="size-options">
+                    <input type="radio" id="granulado-250g" name="size-granulado" value="250g" data-price="6.00" data-name-suffix="(250g)" checked>
+                    <label for="granulado-250g">250g</label>
+                    <input type="radio" id="granulado-500g" name="size-granulado" value="500g" data-price="12.00" data-name-suffix="(500g)">
+                    <label for="granulado-500g">500g</label>
+                </div>
+                <p class="price">R$ 6,00</p>
+                <button class="btn-add complex">Adicionar</button>
+            </div>
+            <div class="product-card options" id="doce-carocudo">
+                <h3>Doce de Leite Caroçudo</h3>
+                <div class="size-options">
+                    <input type="radio" id="carocudo-250g" name="size-carocudo" value="250g" data-price="6.00" data-name-suffix="(250g)" checked>
+                    <label for="carocudo-250g">250g</label>
+                    <input type="radio" id="carocudo-500g" name="size-carocudo" value="500g" data-price="12.00" data-name-suffix="(500g)">
+                    <label for="carocudo-500g">500g</label>
+                </div>
+                <p class="price">R$ 6,00</p>
+                <button class="btn-add complex">Adicionar</button>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-candy-cane"></i> Doces em Barra</h2>
+        <div class="menu-grid">
+            <div class="product-card">
+                <h3>Doce de Leite em Barra</h3>
+                <p class="price">R$ 2,00</p>
+                <button class="btn-add simple" data-name="Doce em Barra (Puro)" data-price="2.00">Adicionar</button>
+            </div>
+            <div class="product-card">
+                <h3>Doce de Leite c/ Coco em Barra</h3>
+                <p class="price">R$ 2,00</p>
+                <button class="btn-add simple" data-name="Doce em Barra (Coco)" data-price="2.00">Adicionar</button>
+            </div>
+        </div>
+    </main>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
